@@ -1,0 +1,41 @@
+/*
+.landing {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+*/
+
+.landing {
+  position: relative;
+}
+
+.landing__imgSection {
+  position: relative;
+
+  z-index: -1;
+}
+
+.landing__imgSection__img {
+  height: 100vh;
+  object-fit: cover;
+  background: black;
+  position: relative;
+  will-change: contents;
+}
+
+.landing__header {
+  position: fixed;
+  text-align: right;
+  padding: 4rem;
+  width: 100%;
+  top: 0rem;
+  font-size: 4rem;
+  color: white;
+  // mix-blend-mode: difference;
+}
