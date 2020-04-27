@@ -1,0 +1,42 @@
+@import "../mixins/respond.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(phonexs) {
+    font-size: 40%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 65%;
+  }
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+  scrollbar-width: none;
+}
